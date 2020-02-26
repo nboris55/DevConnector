@@ -216,7 +216,7 @@ export const deleteEducation = id => async dispatch => {
 //Delete Account
 export const deleteAccount = () => async dispatch => {
   try {
-    const res = await axios.delete(`/api/profile`);
+    await axios.delete(`/api/profile`);
 
     dispatch({
       type: CLEAR_PROFILE
