@@ -20,8 +20,8 @@ const ProfileGitHub = ({ username, getGitHubRepos, repos }) => {
         <div key={repos._id} className='repo bg-white p-1 my-1'>
           <div>
             <h4>
-              <a href={repo.html.url} target='_blank' rel='noopener noreferrer'>
-                {repo.name}
+              <a href={repos.html.url} target='_blank' rel='noopener noreferrer'>
+                {repos.name}
               </a>
             </h4>
           </div>
@@ -41,4 +41,4 @@ const mapStateToProps = state => ({
   repos: state.profile.repos
 });
 
-export default connect(mapStateToProps, { getGithubRepos })(ProfileGitHub);
+export default connect(mapStateToProps, { getGitHubRepos })(ProfileGitHub);
