@@ -40,11 +40,26 @@ const EditProfile = ({
       bio: loading || !profile.bio ? '' : profile.bio,
       twitter: loading || !profile.twitter ? '' : profile.twitter,
       facebook: loading || !profile.facebook ? '' : profile.facebook,
-      linked: loading || !profile.linkedin ? '' : profile.linkedin,
+      linkedin: loading || !profile.linkedin ? '' : profile.linkedin,
       youtube: loading || !profile.youtube ? '' : profile.youtube,
       instagram: loading || !profile.instagram ? '' : profile.instagram
     });
-  }, [loading, getCurrentProfile]);
+  }, [
+    loading,
+    getCurrentProfile,
+    profile.company,
+    profile.website,
+    profile.location,
+    profile.status,
+    profile.facebook,
+    profile.skills,
+    profile.githubusername,
+    profile.bio,
+    profile.twitter,
+    profile.linkedin,
+    profile.youtube,
+    profile.instagram
+  ]);
 
   const {
     company,

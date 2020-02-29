@@ -7,7 +7,7 @@ import { getGitHubRepos } from '../../actions/profile';
 const ProfileGitHub = ({ username, getGitHubRepos, repos }) => {
   useEffect(() => {
     getGitHubRepos(username);
-  }, [getGitHubRepos]);
+  }, [getGitHubRepos, username]);
 
   //GIT HUB NO WORK
   //CAN ADD MORE GITHUB INFO AFTER WORK
