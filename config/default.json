@@ -1,6 +1,6 @@
 {
-  "mongoURI": "mongodb+srv://nboris:qwerty123@devconnector-t4dyc.gcp.mongodb.net/test?retryWrites=true",
-  "jwtSecret": "mySecretToken",
-  "githubClientId": "dcf9efbc92f27d00bed9",
-  "githubSecret": "5c1a42c3807543a917875a3904ce04baeba2e44b"
+  "mongoURI": "mongodb+srv://@devconnector-t4dyc.gcp.mongodb.net/test?retryWrites=true",
+  "jwtSecret": "m",
+  "githubClientId": "",
+  "githubSecret": ""
 }
